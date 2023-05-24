@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="">
+
+    <title>David Serrao</title>
+
+    
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>David Serrao</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="/Users/davidserrao/codeprojects/DavidSerraoPortfolio/images/NotionAvatar.png"
+          alt="david_serrao"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__bounceIn">
+          <h2 class="bio-title">Hello, my name is David!</h2>
+        </div>
+  </section>
+
+    <!-- More about -->
+    <section class="aboutme">
+      <h2>About Me</h2>
+      <p>
+        I'm currently a second year Computational Media student at the Georgia Institute of Technology 
+        with experience in frontend engineering, professional research, and team management. 
+        I'm seeking internship / career opportunities involving full-stack development, project management, 
+        and graphic design to expand my skills in and around these areas.
+     </p>
+     <p><a href="/Users/davidserrao/codeprojects/DavidSerraoPortfolio/images/David Serrao Resume [May 2023].pdf" download>Check out my resume!</a></p>
+     
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="images/python.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="images/html.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="images/css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects:</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="images/buzzcafe.jpeg"
+            alt="buzz-cafe"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Buzz Cafe</h3>
+          <p class="project-details">
+            VR Cafe game that won the Digital Track 1st place prize for Hexlab's 2023 Horizons hackathon!
+          </p>
+          <a href="https://devpost.com/software/buzzcafe" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="/Users/davidserrao/codeprojects/DavidSerraoPortfolio/images/TonifyThumbnail.png"
+            alt="other-project-2"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">"Tonify" App UI</h3>
+          <p class="project-details">
+            Tonify is a guitar-tone recognition app that uses Music Information Retrieval (MIR) AI technology. I created the app's UI in Figma.
+          </p>
+          <a href="https://www.figma.com/community/file/1242887881505999815" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="/Users/davidserrao/codeprojects/DavidSerraoPortfolio/images/PlantStop Thumbnail.png"
+            alt="other-project 3"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">PlantStop Landing Page</h3>
+          <p class="project-details">
+            I designed a landing page in Figma for an idea I had called PlantStop, which is an online ecommerce website that sells all types of house plants.
+          </p>
+          <a href="https://www.figma.com/community/file/1243098972195096824" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Contact Secion -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/moqzeegg" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-->
+    <footer>
+      <p class="copy">&copy; David Serrao 2023</p>
+      </p>
+    </footer>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="mailto:davidmserrao@gmail.com" target="_blank"
+        ><img
+          src="images/gmail.png"
+          alt="Email"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/davidserrao_/" target="_blank"
+        ><img
+          src="images/insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/davidserrao-/" target="_blank"
+        ><img
+          src="images/linkedin.png"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/davidserrao" target="_blank"
+        ><img src="images/github.png" 
+        alt="Github" 
+        class="socicon"
+      /></a>
+
+    <!-- Website scripts -->
+    <script src="styles/scripts.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
